@@ -17,4 +17,18 @@ services:
       - '27017:27017'
     volumes:
       - ./docker-volumes/data:/data/db
+  mysql:
+    container_name: mysql_container
+    image: mysql:latest
+    restart: always
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      - MYSQL_USER=jobber
+      - MYSQL_DATABASE=JB_DB
+      - MYSQL_ROOT_PASSWORD=0002
+      - MYSQL_PASSWORD=0002
+    ports:
+      - '3306:3306'
+    volumes:
+      - ./docker-volumes/mysql:/var/lib/mysql
 
