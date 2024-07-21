@@ -20,6 +20,6 @@
     "pretty": true,
     "resolveJsonModule": true,
   },
-  "include": ["src"],
+  "include": ["src", "scripts/build-package.js", "scripts/babel-preset.js"],
   "exclude": ["node_modules"]
 }
