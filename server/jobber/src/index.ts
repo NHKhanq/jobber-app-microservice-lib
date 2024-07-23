@@ -49,7 +49,7 @@ export {
 } from './interfaces/order.interface'
 
 export {
-    IReviewMessageDetails
+    IReviewMessageDetails,
     IRatingTypes,
     IReviewDocument,
     IRatingCategoryItem,
