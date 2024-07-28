@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "importHelpers": true,
+    "lib": ["dom", "esnext"],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noEmitOnError": true,
+    "outDir": "build",
+    "rootDir": "src",
+    "sourceMap": true,
+    "strict": true,
+    "target": "es2021",
+    "emitDecoratorMetadata": true,
+    "forceConsistentCasingInFileNames": true,
+    "pretty": true,
+    "resolveJsonModule": true,
+    "plugins": [
+      { "transform": "typescript-transform-paths" },
+      { "transform": "typescript-transform-paths", "afterDeclarations": true }
+    ],
+    "path": {
+      "@notifications/*": ["src/*"]
+    }
+  },
+  "include": ["src", "scripts/build-package.js", "scripts/babel-preset.js"],
+  "exclude": ["node_modules"]
+}
