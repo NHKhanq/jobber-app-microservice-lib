@@ -18,13 +18,13 @@
     "forceConsistentCasingInFileNames": true,
     "pretty": true,
     "resolveJsonModule": true,
+    "paths": {
+      "@notifications/*": ["./.src/*"]
+    },
     "plugins": [
       { "transform": "typescript-transform-paths" },
       { "transform": "typescript-transform-paths", "afterDeclarations": true }
-    ],
-    "path": {
-      "@notifications/*": ["src/*"]
-    }
+    ]
   },
   "include": ["src", "scripts/build-package.js", "scripts/babel-preset.js"],
   "exclude": ["node_modules"]
