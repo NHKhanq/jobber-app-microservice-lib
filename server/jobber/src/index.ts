@@ -72,3 +72,7 @@ export {
     ICertificate,
     ISellerDocument
 } from './interfaces/seller.interface'
+
+export { winstonLogger } from './logger'
+
+export { uploads, videoUpload } from './cloudinary-upload';
