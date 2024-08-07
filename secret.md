@@ -1,2 +1,2 @@
 - github token
-`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`
+`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`
