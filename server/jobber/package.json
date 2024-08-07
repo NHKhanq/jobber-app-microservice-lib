@@ -22,7 +22,7 @@
     "url": "git+https://github.com/NHKhanq/jobber-app-microservice.git"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@NHKhanq"
+    "registry": "https://npm.pkg.github.com"
   },
   "files": [
     "build",
