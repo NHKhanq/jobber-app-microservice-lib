@@ -15,7 +15,7 @@
     "trailingComma": "es5"
   },
   "keywords": [],
-  "name": "@NHKhanq/jobber",
+  "name": "@NHKhanq/jobber-app-microservice",
   "author": "",
   "repository": {
     "type": "git",
