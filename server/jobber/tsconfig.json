@@ -20,8 +20,5 @@
     "resolveJsonModule": true,
   },
   "include": ["src"],
-  "exclude": ["node_modules"],
-  "paths": {
-    "@jobber/*": ["src/*"]
-  }
+  "exclude": ["node_modules"]
 }
