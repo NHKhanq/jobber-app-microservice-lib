@@ -1,5 +1,5 @@
 {
-  "name": "jobber-helpers-library",
+  "name": "jobber-app-microservice",
   "version": "0.0.1",
   "license": "MIT",
   "types": "./src/index.d.ts",
