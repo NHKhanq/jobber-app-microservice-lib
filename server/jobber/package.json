@@ -1,5 +1,5 @@
 {
-  "name": "jobber-app-microservice",
+  "name": "@NHKhanq/jobber-app-microservice",
   "version": "0.0.1",
   "license": "MIT",
   "types": "./src/index.d.ts",
