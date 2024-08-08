@@ -28,3 +28,4 @@ jobs:
         working-directory: ./server/jobber/build
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          scope: "@NHKhanq"
