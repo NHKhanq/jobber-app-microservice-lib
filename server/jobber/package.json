@@ -1,6 +1,5 @@
 {
-  "name": "@NHKhanq/jobber-app-microservice",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "license": "MIT",
   "types": "./src/index.d.ts",
   "description": "",
@@ -16,6 +15,8 @@
     "trailingComma": "es5"
   },
   "keywords": [],
+  "name": "@NHKhanq/jobber-app-microservice",
+  "author": "NHKhanq",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/NHKhanq/jobber-app-microservice.git"
