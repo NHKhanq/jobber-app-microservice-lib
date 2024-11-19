@@ -22,8 +22,8 @@ jobs:
       - run: npm run build
         working-directory: ./jobber
       - run: |
-          echo "@NHKhanq:registry=https://npm.pkg.github.com/" > ./jobber/build/.npmrc
-          echo '//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}' >> ./jobber/build/.npmrc
+          echo "@nhkhanq:registry=https://npm.pkg.github.com/" > ./jobber/.npmrc
+          echo '//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}' >> ./jobber/.npmrc
       - run: npm publish
         working-directory: ./jobber/build
         env:
