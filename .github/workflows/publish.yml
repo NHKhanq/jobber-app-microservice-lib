@@ -1,0 +1,30 @@
+name: Publish
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20.x'
+      - run: npm install
+        working-directory: ./server/jobber
+      - run: npm run build
+        working-directory: ./server/jobber
+      - run: |
+          echo "@NHKhanq:registry=https://npm.pkg.github.com/" > ./server/jobber/build/.npmrc
+          echo '//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}' >> ./server/jobber/build/.npmrc
+      - run: npm publish
+        working-directory: ./server/jobber/build
+        env:
+          NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
