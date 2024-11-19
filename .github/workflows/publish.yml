@@ -18,13 +18,13 @@ jobs:
         with:
           node-version: '20.x'
       - run: npm install
-        working-directory: ./server/jobber
+        working-directory: ./jobber
       - run: npm run build
-        working-directory: ./server/jobber
+        working-directory: ./jobber
       - run: |
-          echo "@NHKhanq:registry=https://npm.pkg.github.com/" > ./server/jobber/build/.npmrc
-          echo '//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}' >> ./server/jobber/build/.npmrc
+          echo "@NHKhanq:registry=https://npm.pkg.github.com/" > ./jobber/build/.npmrc
+          echo '//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}' >> ./jobber/build/.npmrc
       - run: npm publish
-        working-directory: ./server/jobber/build
+        working-directory: ./jobber/build
         env:
           NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
